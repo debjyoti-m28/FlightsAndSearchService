@@ -10,13 +10,25 @@
 
 ```
 {
-"development": {
-  "username": <YOUR_DB_LOGIN_NAME>,
-  "password": <YOUR_DB_PASSWORD>,
-  "database": "Flight_Search_DB_DEV",
-  "host": "127.0.0.1",
-  "dialect": "mysql"
+ "development": {
+   "username": <YOUR_DB_LOGIN_NAME>,
+   "password": <YOUR_DB_PASSWORD>,
+   "database": "Flight_Search_DB_DEV",
+   "host": "127.0.0.1",
+   "dialect": "mysql"
+  }
 }
-}
-
 ```
+
+- Once you have added your db config as listed above, go to the src folder from your terminal and execute `yarn sequelize db:create`
+
+## Database Design
+
+- Airplane Table
+- Flights Table
+- Airports Table
+- Cities Table
+
+- A flight belongs to an airplane but one airplane can be used in multiple flights
+- A city has many airports but one airport belongs to a city
+- One airport can have many fligt but a flight belongs to one airport
