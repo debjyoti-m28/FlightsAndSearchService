@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["body-parser", "npm:1.20.1"],\
+            ["dotenv", "npm:16.0.3"],\
             ["express", "npm:4.18.2"],\
             ["nodemon", "npm:2.0.20"]\
           ],\
@@ -86,6 +87,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["FlightsAndSearch", "workspace:."],\
             ["body-parser", "npm:1.20.1"],\
+            ["dotenv", "npm:16.0.3"],\
             ["express", "npm:4.18.2"],\
             ["nodemon", "npm:2.0.20"]\
           ],\
@@ -503,6 +505,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/destroy-npm-1.2.0-6a511802e2-0acb300b74.zip/node_modules/destroy/",\
           "packageDependencies": [\
             ["destroy", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
