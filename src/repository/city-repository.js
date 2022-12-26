@@ -38,7 +38,7 @@ class CityRepository {
     async updateCity( cityId, data ){
         try{
             // the below code not returns the updated object
-            
+
             const city = await City.update(data, {
                 where: {
                     id: cityId
@@ -56,6 +56,16 @@ class CityRepository {
             throw (error); 
         }
     } 
+
+    async getAllCities(){
+        try{
+            const cities = await City.findAll();
+            return cities;
+        } catch (error){
+            console.log("Something went wrong in repository layer");
+            throw (error); 
+        }
+    }     
 }
 
 module.exports = CityRepository;
