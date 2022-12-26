@@ -6,6 +6,7 @@ class CityRepository {
             const city = await City.create({name});
             return city;
         } catch (error){
+            console.log("Something went wrong int repository layter");
             throw (error); 
         }
     }
