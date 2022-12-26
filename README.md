@@ -20,7 +20,7 @@
 }
 ```
 
-- Once you have added your db config as listed above, go to the src folder from your terminal and execute `yarn sequelize db:create`
+- Once you have added your db config as listed above, go to the src folder from your terminal and execute `yarn sequelize db:create` and then execute `yarn sequelize db:migrate`
 
 ## Database Design
 
