@@ -40,3 +40,9 @@
 ### Airport -> id, name, address, city_id, createdAt, updatedAt
 
      Relationship -> A City has many airports but Airport belongs to a city (one to many)
+
+```
+   yarn sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer
+
+   yarn sequelize db:migrate
+```
